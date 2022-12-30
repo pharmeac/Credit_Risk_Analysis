@@ -54,11 +54,4 @@ The purpose of this analysis was to evaluate the performance of various over and
    - low risk = 0.31
  
 ## Summary
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
-
-
-
-
-
-
+All models had an F1 score of 0.01 or 0.02, which means we have a pronounced imbalance between sensitivity and precision. Additionally, none of the models tested had a good precision value for high risk. This does not give us confidence that when high risk is predicted, that it is actually true. This could result in loans not being approved, and potential customers missed. Although the EASYEnsembleClassifier performed the best of the tested models, it did not perform well enough to recommend due to the reasons mentioned above. It performed the best due to a high accuracy value and the best sensitivity for identifying high risk loans.
